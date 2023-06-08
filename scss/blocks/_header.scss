@@ -1,0 +1,183 @@
+.header{
+    width: 1300px;
+    &--nav{
+        width: 1300px;
+        background-image: url(/images/Rectangle\ 61.svg);
+        display: flex;
+        &_logo{
+            width: 20%;
+            h2{
+                color: #FFFFFF;
+                font-family: 'Tenor Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 29px;
+                text-align: center;
+                span{
+                    color: #FF0000;
+                }
+            }
+            p{
+                color: #FFFFFF;
+                font-family: 'Tenor Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+        &_list{
+            width: 40%;
+            &-item1 a h3 {
+                color: #FF0000;
+            }
+            ul{
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: #FFFFFF;
+                list-style: none;
+                // font-family: 'Tenor Sans';
+               
+            }
+        }
+        &_extra{
+            width: 30%;
+            ul{
+                height: 100%;
+                display: flex;
+                // gap: 40px;
+                align-items: center;
+                justify-content: space-around;
+                color: #FFFFFF;
+                list-style: none;
+            }
+        }
+        &_menu{
+            display: none;
+        }
+    }
+    &--hero{
+        width: 1300px;
+        display: flex;
+        background-image: url(/images/Rectangle\ 77.svg);
+        &_text{
+            width: 10%;
+            &-box{
+                width: 600px;
+                margin-top: 150px;
+                margin-left: 40px;
+                h2{
+                    font-size: 60px;
+                    color: #FFFFFF;
+                    span{
+                        color: #FF0000;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                }
+                button{
+                    width: 300px;
+                    height: 58px;
+                    color: #FFFFFF;
+                    background-color: #FF0000;
+                    margin-top: 100px;
+                }
+            }
+            
+        }
+        &_img{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        width: 100%;
+    }
+    .header--nav{
+        width: 100vw;
+    }
+    .header--nav_list{
+        display: none;
+    }
+    .header--nav_extra{
+        display: none;
+    }
+    .header--nav_logo{
+        width: 40%;
+    }
+    .header--nav_menu{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        gap: 50px;
+    }
+    .header--hero_text{
+        width: auto;
+    }
+    .header--hero_text-box{
+        width: 100%;
+    }
+    .header--hero{
+        width: 59%;
+        flex-direction: column;
+    }
+    .header--hero_img{
+        width: auto;
+        img{
+         width: 100%;
+        }
+    }
+}    
+@media screen and (max-width: 500px){
+    .header{
+        width: auto;
+    }
+    .header--nav{
+        width: 100vw;
+    }
+    .header--nav_list{
+        display: none;
+    }
+    .header--nav_extra{
+        display: none;
+    }
+    .header--nav_logo{
+        width: 40%;
+    }
+    .header--nav_menu{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        gap: 50px;
+    }
+    .header--hero_text{
+        width: auto;
+    }
+    .header--hero_text-box{
+        width: 80%;
+    }
+    .header--hero{
+        width: 100%;
+        flex-direction: column;
+    }
+    .header--hero_img{
+        width: auto;
+        img{
+         width: 100%;
+         margin-top: -350px;
+        }
+    }
+}    

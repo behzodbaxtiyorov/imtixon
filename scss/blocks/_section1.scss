@@ -1,0 +1,167 @@
+.section1{
+    width: 1300px;
+    // border: 1px solid;
+    &--raschot{
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        &_text{
+            width: 40%;
+            &-blok{
+                background-color: #FFF8F8;
+                margin-top: 60px;
+                h2{
+                    font-size: 28px;
+                    span{
+                        color: #FF0000;
+                    }
+                }
+                button{
+                    width: 300px;
+                    height: 60px;
+                    background-color: #FF0000;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &_img{
+            width: 60%;
+        }
+    }
+    &--port{
+        width: 1300px;
+        background-color: #000;
+        &_text{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            &-img1{
+                width: 600px;
+                // border: 1px solid;
+            }
+            &-img2{
+                width: 600px;
+                // border: 1px solid;
+            }
+        }
+        &_text2{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            &-img3{
+                width: 600px;
+                // border: 1px solid;
+            }
+            &-img4{
+                width: 600px;
+                // border: 1px solid;
+            }
+        }    
+    }
+}
+@media screen and (max-width: 768px){
+    .section1{
+        width: 100%;
+    }
+    .section1--raschot{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .section1--raschot_text{
+        width: 100vw;
+    }
+    .section1--raschot_img{
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port{
+        width: 59%;
+    }
+    .section1--port_text{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section1--port_text-img1{
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text-img2{
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text2{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section1--port_text2-img3{
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text2-img4{
+        width: 100vw;
+        img{
+            width: 100%;
+        }
+    }
+}    
+@media screen and (max-width: 500px){
+    .section1{
+        width: 100%;
+    }
+    .section1--raschot{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .section1--raschot_text{
+        width: 100%;
+    }
+    .section1--raschot_img{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port{
+        width: 100%;
+    }
+    .section1--port_text{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section1--port_text-img1{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text-img2{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text2{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section1--port_text2-img3{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .section1--port_text2-img4{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+}    
